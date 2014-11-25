@@ -21,7 +21,9 @@ public class PersonDaoTest {
     PersonDao personDao;
 
     @Test
-    @Transactional
+//    @Transactional
+    @Transactional("primary")
+//    @Transactional("secondary")
     public void test() {
         Person person = new Person("Johnny", 34);
         personDao.save(person);
