@@ -6,6 +6,10 @@
             <param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSS} [%t] %-5p %c %x - %m%n" />
         </layout>
     </appender>
+    <!--<logger name="jdbc.audit" additivity="false">-->
+        <!--<level value="info" />-->
+        <!--<appender-ref ref="console" />-->
+    <!--</logger>-->
     <logger name="jdbc.sqlonly" additivity="false">
         <level value="info" />
         <appender-ref ref="console" />
@@ -18,4 +22,8 @@
         <level value="info" />
         <appender-ref ref="console" />
     </logger>
+    <!--<root>-->
+        <!--<level value="debug" />-->
+        <!--<appender-ref ref="console" />-->
+    <!--</root>-->
 </log4j:configuration>

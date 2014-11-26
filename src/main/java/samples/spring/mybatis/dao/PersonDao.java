@@ -11,6 +11,8 @@ public interface PersonDao {
 
     void save(Person person);
 
+    void save(List<Person> persons);
+
     List<Person> findAll();
 
 }
